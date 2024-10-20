@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas lado a lado com espaço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+  .table {
+      border: 1px solid #000; /* Borda preta para a tabela */
+  }
+
+  .table td, .table th {
+      border: 1px solid #000; /* Borda preta para as células */
+  }
+</style>
+
+<body>
+
+    <div class="container container-fluid">
+        <div class="row gap-3 justify-content-center">
+            <div class="col-md-5">
+                <h4 class="text-center">Sunrise Division</h4>
+                <table class="table table-bordered border-black  table-hover text-center">
+                    <thead>
+                      <tr>
+                        <th class="col-1 " scope="col">#</th>
+                        <th class="col-3" scope="col">Times</th>
+                        <th class="col-1 sortable-header" scope="col" data-sort-index="2">W-L <span>&#9660;</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-success">1</td>
+                            <td>Toninhos</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-success">2</td>
+                            <td>Dicks Vigaristas</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary">3</td>
+                            <td>Painzitos Zoners</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary">4</td>
+                            <td>VH Ragnarok</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">5</td>
+                            <td>Game Hub</td>
+                            <td>0-0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="col-md-5">
+                <h4 class="text-center">High Noon Division</h4>
+                <table class="table table-bordered border-black  table-hover text-center">
+                    <thead>
+                      <tr>
+                        <th class="col-1" scope="col">#</th>
+                        <th class="col-3" scope="col">Times</th>
+                        <th class="col-1 sortable-header" scope="col" data-sort-index="2">W-L <span>&#9660;</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-success">1</td>
+                            <td>Real Madruga</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr >
+                            <td class="table-success">2</td>
+                            <td>Hash</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr >
+                            <td class="table-secondary">3</td>
+                            <td>Triiix</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr >
+                            <td class="table-secondary">4</td>
+                            <td>Baile de Monique</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr >
+                            <td class="table-danger">5</td>
+                            <td>Midgard</td>
+                            <td>0-0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div class="container container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h4 class="text-center">Golden Horizon Standings</h4>  
+            <table class="table table-bordered border-black table-hover text-center" id="tabelaClasificacao">
+                <thead>
+                  <tr>
+                    <th class="col-1" scope="col">#</th>
+                    <th class="col-3" scope="col">Times</th>
+                    <th class="col-1 sortable-header" scope="col" data-sort-index="2">Win and Loss <span>&#9660;</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr >
+                    <th class="table-success" scope="row">1</th>
+                    <td>Game Hub</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-success" scope="row">2</th>
+                    <td>Midgard</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-success" scope="row">3</th>
+                    <td>VH Ragnarok</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-success" scope="row">4</th>
+                    <td>Painzitos Zoners</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-secondary" scope="row">5</th>
+                    <td>The Dicks Vigaristas</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-secondary" scope="row">6</th>
+                    <td>Toninhos Tornado</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-secondary" scope="row">7</th>
+                    <td>Triiix</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-secondary" scope="row">8</th>
+                    <td>FC Baile de Monique</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-danger" scope="row">9</th>
+                    <td>Hash</td>
+                    <td>0-0</td>
+                  </tr>
+                  <tr >
+                    <th class="table-danger" scope="row">10</th>
+                    <td>Real Madruga</td>
+                    <td>0-0</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll('.sortable-header').forEach(function(header) {
+  let sortOrder = true; // Alterna entre crescente e decrescente
+
+  header.addEventListener('click', function() {
+    const table = header.closest('table'); // Pega a tabela mais próxima
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.rows);
+    const sortIndex = header.dataset.sortIndex; // Pega o índice da coluna a ser ordenada
+
+    rows.sort((a, b) => {
+      const cellA = a.cells[sortIndex].innerText.trim();
+      const cellB = b.cells[sortIndex].innerText.trim();
+
+      const numA = parseFloat(cellA.replace(/,/g, '')) || cellA; // Converte para número, se aplicável
+      const numB = parseFloat(cellB.replace(/,/g, '')) || cellB;
+
+      if (typeof numA === 'number' && typeof numB === 'number') {
+        return sortOrder ? numB - numA : numA - numB; // Ordena números
+      } else {
+        return sortOrder ? cellB.localeCompare(cellA) : cellA.localeCompare(cellB); // Ordena texto
+      }
+    });
+
+    // Atualiza as linhas e a coluna de posição (index 0)
+    rows.forEach((row, index) => {
+      row.cells[0].innerText = index + 1;
+      tbody.appendChild(row);
+    });
+
+    // Limpa os indicadores de outros cabeçalhos
+    document.querySelectorAll('.sortable-header').forEach(function(otherHeader) {
+      otherHeader.innerText = otherHeader.innerText.replace(/[\u2191\u2193]/g, ''); // Remove setas
+    });
+
+    // Adiciona um indicador de ordenação no cabeçalho clicado
+    header.innerText = `${header.innerText} ${sortOrder ? '↓' : '↑'}`;
+
+    sortOrder = !sortOrder; // Alterna a ordem de ordenação
+  });
+});
+</script>
+</body>
+</html>
